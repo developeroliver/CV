@@ -1,0 +1,332 @@
+.grid-layout{
+    display: grid;
+    min-height: 100vh;
+    grid: 
+    "picture header"auto
+    "aside main" 1fr
+    "footer footer"
+    / 350px auto
+}
+
+/* Header */
+
+header{
+    grid-area: header;
+    background: linear-gradient(to right, var(--primary), var(--light));
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 5rem;
+}
+
+header h1{
+    font-size: 6rem;
+    letter-spacing: 3rem;
+    font-weight: 300;
+    line-height: 8rem;
+}
+
+header p{
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+}
+
+header span{
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+
+
+/* Section Image de Profil */
+
+.picture{
+    grid-area: picture;
+    padding: 6rem;
+    background-color: var(--background);
+}
+
+.picture img{
+    border-radius: 50%;
+}
+
+/* Aside */
+
+aside{
+    grid-area: aside;
+    background-color: var(--background);
+    padding: 5rem;
+    border: 1px solid var(--border);
+    border-top: 0px;
+}
+
+aside .aside-content{
+    margin: 0 0 5rem;
+}
+
+
+aside h3{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+aside p{
+    margin:0 0 2rem;
+    font-style: italic;
+}
+
+aside .bar-skill{
+    position: relative;
+    height: 5px;
+    background: var(--hint);
+    margin: 2rem 0;
+}
+
+aside .bar-skill-progress1{
+    position: absolute;
+    width: 90%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: var(--light);
+}
+
+aside .bar-skill-losange1{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 90%;
+    top: -2.5px;
+    background: var(--primary);
+}
+
+aside .bar-skill-progress2{
+    position: absolute;
+    width: 65%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: var(--light);
+}
+
+aside .bar-skill-losange2{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 65%;
+    top: -2.5px;
+    background: var(--primary);
+}
+
+aside .bar-skill-progress3{
+    position: absolute;
+    width: 85%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: var(--light);
+}
+
+aside .bar-skill-losange3{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 85%;
+    top: -2.5px;
+    background: var(--primary);
+}
+
+aside .bar-skill-progress4{
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: var(--light);
+}
+
+aside .bar-skill-losange4{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 80%;
+    top: -2.5px;
+    background: var(--primary);
+}
+
+aside .bar-skill-progress5{
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: var(--light);
+}
+
+aside .bar-skill-losange5{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    left: 60%;
+    top: -2.5px;
+    background: var(--primary);
+}
+
+aside .aside-content:nth-child(4) h3{
+    text-transform: uppercase;
+}
+
+aside .stars-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem 0 3rem;
+    color: var(--hint);
+}
+
+aside .stars-container i{
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+aside .social-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside .social-content i{
+    font-size: 2rem;
+    flex: 0 0 50px;
+    margin-right: 1rem;
+    transition: all 0.2s;
+}
+
+aside .social-content p{
+    margin: 0;
+    flex: auto;
+}
+
+aside .social-content:hover{
+    background-color: var(--border);
+}
+
+aside .social-content:hover i{
+    color: var(--primary);
+    transform: scale(1.3);
+}
+
+/* Partie Principale */
+
+main{
+    grid-area: main;
+    padding: 5rem;
+}
+
+main h2{
+    margin-bottom: 4rem;
+}
+
+main .timeline-container{
+    display: flex;
+    margin: 6rem 0;
+}
+
+main .timeline{
+    padding-right: 2rem;
+    text-align: center;
+}
+
+main .content{
+    padding-left: 1rem;
+    border-left: 1px solid var(--border);
+}
+
+main .content h3{
+    margin: 0;
+}
+
+main .content p:nth-child(3){
+    margin: 0;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+}
+
+main .content ul{
+    list-style: circle;
+    margin: 2rem 0;
+    padding-left: 4rem;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: var(--text);
+}
+
+footer h2{
+    margin-bottom: 3rem;
+}
+
+footer form{
+    display: flex;
+    align-items: center;
+}
+
+footer form .prefix, .postfix{
+    background: linear-gradient(to right, var(--dark), var(--light));
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+footer form .prefix{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+footer form .postfix{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer form button{
+    outline: 0;
+    border: 0;
+    background-color: var(--text);
+    cursor: pointer;
+}
+
+footer form button:hover{
+    opacity: 0.8;
+}
+
+footer form input{
+    border: 0;
+    outline: 0;
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    min-width: 400px;
+}
+
+::placeholder{
+    color: var(--text);
+}

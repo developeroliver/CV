@@ -1,0 +1,14 @@
+.title-small{
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-primary{
+    color: var(--primary);
+}
+
+.text-hint{
+    color: var(--hint);
+}

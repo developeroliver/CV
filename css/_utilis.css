@@ -1,0 +1,9 @@
+.mb-2{
+    margin: 0 0 2rem;
+}
+
+.mb-5{
+    margin: 1rem 0 5rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+}
